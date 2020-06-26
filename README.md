@@ -1,27 +1,26 @@
-# Traction Thrive
+# Traction Thrive - PPE
 
-![Traction Thrive Logo](https://github.com/SFDO-Community/TractionThrive/blob/master/assets/traction_thrive_logo-medium.png)
+![Traction Thrive Logo](https://github.com/SFDO-Community/TractionThrive/blob/master/assets/traction_thrive_logo-small.png)
+
+Traction Thrive - PPE focuses on the personal protective equipment capabilities of the Traction Thrive app. It can be installed independently.
 
 Traction Thrive is an application for hospitals and clinics to track and report on resources related to COVID-19 response. Created by Traction On Demand in partnership with Thrive Health and initially rolled out in British Columbia, now available as an open source managed package to maximize community collaboration.
 
 For more information, please visit https://tractionondemand.com/traction-thrive/
 
-## Development
+## Components
 
-### Requirements
+### Objects and Fields
+The status report object and fields.
 
-Install the Salesforce CLI (sfdx), connect it to a DevHub, and set the config var `defaultdevhubusername`
+### Location Picker
+A drill-down picker to help a user quickly choose the location or department to save the status report against.
 
-Next, install CumulusCI per the instructions at https://trailhead.salesforce.com/content/learn/modules/cumulusci-setup
+### Status Report
+The Lightning web components for saving status reports.
 
-Learn more about CumulusCI at https://cumulusci.readthedocs.io/en/latest/install.html
+### Permission Set
+This permission set can be quickly added to a user's permissions, giving them access to the various components and objects and fields.
 
-### Creating a development scratch org
-
-* Run `cci flow run dev_org --org dev` to deploy this project.
-* Run `cci org browser dev` to open the org in your browser.
-
-### Creating a test scratch org
-
-* Run `cci flow run qa_org --org qa` to deploy this project.
-* Run `cci org browser qa` to open the org in your browser.
+### Reports and Dashboards
+Some default reports and a dashboard to summarize status reports.
